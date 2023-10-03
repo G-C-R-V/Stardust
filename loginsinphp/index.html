@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <video id="bkg" src="bkg2.mp4" muted loop autoplay></video>
+  <div class="wrapper">
+    <div class="card-switch">
+        <label class="switch">
+           <input class="toggle" type="checkbox">
+           <span class="slider"></span>
+           <span class="card-side"></span>
+           <div class="flip-card__inner">
+              <div class="flip-card__front">
+                 <div class="title">Iniciar Sesion</div>
+                 <form action="" class="flip-card__form">
+                    <input type="email" placeholder="Email" name="email" class="flip-card__input">
+                    <input type="password" placeholder="Contraseña" name="password" class="flip-card__input">
+                    <button class="flip-card__btn">Enviar</button>
+                 </form>
+              </div>
+              <div class="flip-card__back">
+                 <div class="title">Registrarse</div>
+                 <form action="" class="flip-card__form">
+                    <input type="name" placeholder="Usuario" class="flip-card__input">
+                    <input type="email" placeholder="Email" name="email" class="flip-card__input">
+                    <input type="password" placeholder="Contraseña" name="password" class="flip-card__input">
+                    <button class="flip-card__btn">Confirmar</button>
+                 </form>
+              </div>
+           </div>
+        </label>
+    </div>   
+</div>
+</body>
+</html>

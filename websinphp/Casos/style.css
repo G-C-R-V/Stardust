@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #f3f0d3;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+#bkg {
+  position: fixed;
+  backdrop-filter: blur(30px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* Estilos para el nav */
+
+.header{
+    background-color: #23057515;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    padding: 5px 1%;
+    position: fixed; /* Hacer que el nav sea fijo */
+    width: 100%; /* Asegurarse de que el ancho sea del 100% de la ventana */
+    top: 0; /* Fijar el nav en la parte superior */
+    z-index: 1000; /* Establecer un índice de apilamiento alto para que esté por encima del contenido */
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.header .logo img{
+    height: 40px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: #e7d6f8;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #f5f5f5ad;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: medium;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #72046969;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilo para las publicaciones*/
+
+.news-container {
+  background-color: rgba(255, 255, 255, 0.034);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1300px; /* Ajusta el valor según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  position: relative; /* Agrega esta línea para habilitar el posicionamiento */
+  top: 75px; /* Ajusta el valor según tus necesidades */
+  margin-bottom: 1%;  
+}
+
+.news-item {
+  /* Estilos para el contenido de la noticia */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column; /* Cambiamos la dirección de la columna */
+  align-items: center; /* Centramos horizontalmente los elementos */
+  text-align: left; /* Centramos el texto */
+  margin-bottom: 1%;
+}
+
+h2 {
+  margin-bottom: 10px; /* Agregamos espacio inferior al título */
+  text-align: left;
+  margin-left: right;
+}
+
+/* Estilos para la imagen (GIF) */
+.news-item img {
+  max-width: 100%; /* Limita el ancho de la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto */
+  border: 2px solid #00000041; /* Agrega un borde de 2px sólido */
+  border-radius: 10px; /* Agrega bordes redondeados */
+  margin-top: 10px; /* Añade un margen superior de 10px */
+}
+
+
+
+
+
+
+
+
+/* Estilos para layouts */
+.news-container-card {
+  background-color: rgba(255, 255, 255, 0.034);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1300px; /* Ajusta el valor según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  position: relative; /* Agrega esta línea para habilitar el posicionamiento */
+  top: 75px; /* Ajusta el valor según tus necesidades */
+  margin-bottom: 1%;  
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  justify-content: flex-start; /* Alinea las tarjetas al comienzo del contenedor */
+  gap: 15px; /* Espacio entre las tarjetas */
+  width: auto; /* Ancho automático para acomodar todas las tarjetas */
+  margin-bottom: 3%;
+}
+
+.card {
+  flex: 0 0 calc(25% - 15px); /* Ancho de la tarjeta con espacio entre ellas */
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #d4d4d43f;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff; /* Color para enlaces no visitados */
+}
+
+a:visited {
+  color: #ffffff; /* Mismo color para enlaces visitados */
+}
+
+a:hover {
+  text-decoration: none;
+  /* Otros estilos en hover */
+}
+
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+/* RADAR */
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: hue-rotate(10deg);
+  padding: 0;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.radar {
+  width: 200px;
+  height: 200px;
+  background: #000000;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #18D322;
+  overflow: hidden;
+}
+
+.radar::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 200px;
+  left: 49%;
+  background-color: #18D322;
+  animation: rotate 3s linear infinite;
+  z-index: 6;
+}
+
+.radar::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 200px;
+  left: 49%;
+  transform: rotate(-4deg);
+  background-color: #18D322;
+  animation: rotate 3s linear infinite;
+  box-shadow: 0 0 10px 10px #2fbb39;
+  z-index: 6;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #18D322;
+  border-radius: 50%;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid #18D322;
+  border-radius: 50%;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid #18D322;
+  border-radius: 50%;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  top: 30%;
+  background-color: #18D322;
+  border-radius: 50%;
+  position: absolute;
+  animation: doted 1.5s  ease infinite;
+}
+
+.dot2 {
+  width: 4px;
+  height: 4px;
+  top: 80%;
+  right: 30%;
+  background-color: #18D322;
+  border-radius: 50%;
+  position: absolute;
+  animation: doted 1.5s  1.2s ease infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes doted {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px 5px rgba(24, 211, 33, 0.3),0 0 10px 10px rgba(24, 211, 33, 0.3);
+  }
+
+  60% {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px 5px rgba(24, 211, 33, 0.3),0 0 10px 10px rgba(24, 211, 33, 0.3);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(24, 211, 33, 0.7),0 0 0 0 rgba(24, 211, 33, 0.5),0 0 0 0 rgba(24, 211, 33, 0.3);
+    opacity: 0;
+  }
+}
+
+#rdr {
+  flex: 1; /* Hace que el párrafo ocupe todo el espacio disponible */
+  margin-left: 40px; /* Agrega un margen a la izquierda para separarlo del radar */
+}
+
+
+
+
+
+
+
+/* ESTILO TERMINAL */
+
+.container3 {
+  width: 700px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  margin: right;
+  margin-top: -16%;
+  margin-left: 30%;
+}
+
+.terminal_toolbar {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 0 8px;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #212121;
+  justify-content: space-between;
+}
+
+.butt {
+  display: flex;
+  align-items: center;
+}
+
+.header .btn {
+  display: flex; /* Define el tipo de pantalla como flexible (flexbox) */
+  justify-content: flex-end; /* Centra horizontalmente el contenido dentro del elemento flex */
+  align-items: center; /* Centra verticalmente el contenido dentro del elemento flex */
+  padding: 0; /* Elimina el relleno interno del elemento */
+  margin-right: 5px; /* Agrega un margen a la derecha del elemento de 5px */
+  font-size: 8px; /* Establece el tamaño de fuente en 8px */
+  height: auto; /* Establece la altura del elemento en 12px */
+  width: auto; /* Establece el ancho del elemento en 12px */
+  box-sizing: border-box; /* Hace que el tamaño total incluya el relleno y el borde (modelo de caja) */
+  border: none; /* Elimina el borde del elemento */
+  border-radius: 10%; /* Establece un radio de borde para hacer un círculo perfecto */
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2); /* Agrega una sombra al texto */
+  box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642; /* Agrega sombras al elemento */
+  margin-left: auto; /* Alinea el elemento a la derecha dentro de su contenedor (elemento padre) */
+}
+
+.btn-color {
+  background: #ee411a;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.butt--exit {
+  background: linear-gradient(#f37458 0%, #de4c12 100%);
+}
+
+.add_tab {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0 6px;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.user {
+  color: #d5d0ce;
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.terminal_body {
+  background: rgba(0, 0, 0, 0.6);
+  height: calc(100% - 30px);
+  padding-top: 2px;
+  margin-top: -1px;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.terminal_promt {
+  display: flex;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  margin-left: 4px;
+  font-size: 20px;
+}
+
+.terminal_promt span {
+  margin-left: 4px;
+  font-size: 20px;
+}
+
+
+.terminal_user {
+  color: #1eff8e;
+}
+
+.terminal_location {
+  color: #4878c0;
+}
+
+.terminal_bling {
+  color: #dddddd;
+}
+
+.terminal_cursor {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fff; /* Cursor simulado */
+  animation: typing 5s steps(30, end) 5s infinite;
+}
+
+
+
+
+/*adptative desing*/
+
+@keyframes typing {
+  from {
+    width: 0; /* Comienza con un ancho de 0 */
+  }
+  50% {
+    width: calc(100% - 260px); /* Se detiene antes del extremo derecho */
+  }
+  to {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas, como tabletas y teléfonos */
+  .header {
+    height: auto; /* Cambia la altura del encabezado para que se ajuste al contenido */
+    flex-direction: column; /* Cambia la dirección del encabezado a columna para apilar elementos */
+  }
+
+  .logo {
+    margin: 20px 0; /* Añade espacio entre el logotipo y los elementos de navegación */
+  }
+
+  .nav-links {
+    text-align: center; /* Centra los elementos de navegación en pantallas más pequeñas */
+  }
+
+  .nav-links li {
+    display: block; /* Muestra los elementos de navegación uno debajo del otro */
+    padding: 10px 0; /* Añade espacio entre los elementos de navegación */
+  }
+
+  .btn button {
+    font-size: 16px; /* Cambia el tamaño del botón para que sea más legible en pantallas pequeñas */
+    padding: 10px 20px; /* Ajusta el relleno del botón */
+  }
+
+  /* Puedes continuar agregando más estilos específicos para pantallas más pequeñas aquí */
+}
+
+@media screen and (max-width: 480px) {
+  /* Estilos para pantallas aún más pequeñas, como teléfonos móviles */
+  /* Puedes agregar estilos específicos para pantallas de 480px de ancho o menos aquí */
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: transparent; /* Color de fondo similar al del encabezado */
+  backdrop-filter: blur(20px); /* Efecto de desenfoque similar al del encabezado */
+  color: #eceff1; /* Color del texto */
+  text-align: center; /* Alinea el texto al centro */
+  padding: 10px 0; /* Espaciado interno superior e inferior */
+  position: fixed; /* Cambia la posición a fija para que el footer permanezca en la parte inferior */
+  width: 100%; /* Ancho del 100% para que cubra todo el ancho de la pantalla */
+  bottom: 0; /* Fija el footer en la parte inferior */
+  z-index: 1000; /* Índice de apilamiento para asegurarse de que esté encima de otros elementos */
+  display: none;
+}
